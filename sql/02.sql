@@ -5,3 +5,14 @@
  * for all films whose rating is one of the two most popular.
  * Use the film table and order by title.
  */
+
+SELECT film.film_id, film.title
+FROM film
+WHERE film.rating IN (
+	SELECT film.rating
+	FROM film
+	GROUP BY film.rating
+	ORDER BY COUNT(*) DESC
+	LIMIT 2
+)
+ORDER BY film.title;
