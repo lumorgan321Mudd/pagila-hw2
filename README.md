@@ -1,6 +1,6 @@
-# pagila-hw2
-
 https://github.com/lumorgan321Mudd/pagila-hw2/actions/workflows/tests.yml/badge.svg
+
+# pagila-hw2
 
 This is the second SQL homework in CMC's CSCI143: Big Data class.
 
